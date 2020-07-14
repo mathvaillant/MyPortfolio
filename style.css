@@ -41,7 +41,7 @@ aside {
   display: flex;
   flex-direction: column;
   padding: 0.8rem;
-  /* margin-top: 4rem; */
+  margin-top: 8rem;
 }
 
 .content h1, h3, p, span{
@@ -242,31 +242,41 @@ button:active {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: #000;
-  margin: 1rem;
-  padding-bottom: 2rem;
-  border-radius: 1rem;
+  padding-bottom: 4rem;
+  transition: 0.5s;
+  border-radius: .5rem;
+  background-color: rgba(228, 228, 228, 0.39);
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
-  background-image: linear-gradient( rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.705) ), url('./images/backgroundCode.gif');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+}
+
+.containerSkills:hover {
+  transform: scale(1.01);
 }
 
 .containerSkills h1 {
-  color: #fff;
+  color: #000;
   font-style: normal;
   font-weight: normal;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .stackBox {
-  margin: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.stackBox img {
-  border-radius: 1rem;
-  width: 250px;
+.tech {
+  width: auto;
+  height: 100px;
+  margin: 0.5rem .5rem;
+  transition: 0.8s;
+}
+
+
+.tech:hover {
+  transform: scale(1.1);
 }
 
 /* FOOTER ===========================> */
@@ -277,8 +287,6 @@ footer {
   margin-top: 5rem;
   text-align: center;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
 }
 
 footer h1 {
@@ -399,7 +407,6 @@ footer .container form label{
     text-align: start;
     max-width: 100%;
     margin-left: 15rem;
-    margin-top: 3rem;
   }
   
   .content h1 {
@@ -485,3 +492,14 @@ footer .container form label{
   }
 }
 
+@media (max-width: 375px) {
+  .containerSkills {
+    margin: 2rem 0.5rem;
+  }
+
+  .tech {
+    height: 50px;
+  }
+}
+
+/* ====================> tooltip */
