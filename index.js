@@ -3,7 +3,7 @@ const btnUp = document.querySelector('.scrollBtnUp button').addEventListener('cl
 })
 
 const btnDown = document.querySelector('.scrollBtnDown button').addEventListener('click', function() {
-  document.documentElement.scrollTop = 840;
+  document.documentElement.scrollTop = 715;
 });
 
 const contactBtn = document.querySelector('#contact').addEventListener('click', function() {
