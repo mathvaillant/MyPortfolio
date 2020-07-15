@@ -38,7 +38,7 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 8rem;
+  padding-top: 1rem;
 }
 
 .containerMain .row {
@@ -152,7 +152,7 @@ button:active {
 .containerProjects .project {
   display: flex;
   flex-direction: row;
-  margin-bottom: 2rem;
+  margin-bottom: 8rem;
   height: 350px;
   width: auto;
   transition: .8s;
@@ -166,16 +166,23 @@ button:active {
 .containerProjects .project .projectDesc {
   display: flex;
   flex-direction: column;
-  width: 30%;
   padding: 1rem; 
 }
 
-.containerProjects .project .projectGif {
+.containerProjects .project #reisen-news-gif {
   background-image: url('./images/Reisen\ News\ Website\ gif.gif');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  width: 70%;
+  width: 100%;
+}
+
+.containerProjects .project #portfolio-gif {
+  background-image: url('./images/matt\ website\ gif.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
 }
 
 .containerProjects .project h2{
@@ -231,16 +238,22 @@ button:active {
   color: #fff;
   font-weight: lighter;
 }
-
-.containerProjects .project .buttons button:first-child {
+/* 
+.containerProjects .project .buttons a button {
   background-color: #36096d;
   background-image: linear-gradient(315deg, #59db59 0%, #5ba72f 74%);
   outline: none;
 }
 
-.containerProjects .project .buttons button:nth-last-of-type(1) {
+.containerProjects .project .buttons a button {
   background-color: #3f0d12;
   background-image: linear-gradient(315deg, #c22e3d 0%, #9e1d31 74%);
+  outline: none;
+} */
+
+.containerProjects .project .buttons a button {
+  background-color: #63d471;
+  background-image: linear-gradient(315deg, #3a83435e 0%, #4b6154 74%);
   outline: none;
 }
 
