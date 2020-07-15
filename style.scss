@@ -450,7 +450,12 @@ footer {
 
         #submit {
           display: inline;
-          
+        }
+
+        #myfile {
+          background-color: $bgWhite;
+          padding: 4px;
+          text-align: center;
         }
         
         #submit:active {
