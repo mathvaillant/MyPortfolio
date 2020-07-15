@@ -54,7 +54,7 @@ html {
 
     .content {
       h1 {
-        font-size: 4rem;
+        font-size: 5rem;
         color: $textWhite;
         font-style: normal;
         font-weight: normal;
@@ -97,7 +97,7 @@ html {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .containerMain .row {
     padding-top: 2rem;
   }
@@ -264,7 +264,7 @@ aside {
           }
 
           .buttons {
-            display: flex;
+            display:flex;
             flex-direction: row;
             align-self: center;
             margin-top: auto;
@@ -360,7 +360,6 @@ aside {
   flex-direction: column;
   text-align: center;
   padding-bottom: 4rem;
-  transition: 0.5s;
   border-radius: .5rem;
   background-color: rgba(228, 228, 228, 0.39);
   box-shadow: $boxShadow;
